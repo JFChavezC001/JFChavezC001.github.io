@@ -1,0 +1,127 @@
+body{
+    background: #065a60 ;
+    /*Asignando una famila de fuentes*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;    
+}
+
+h1{
+    font-size: 2rem;/*es un valor relativo a la raiz*/
+    line-height: 1.3em;
+}
+p{
+    margin-bottom: 1.6rem;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #6c757d;
+    color: black;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+    .header a{
+        color: blanchedalmond;
+        text-decoration: none;
+
+    }
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 2.4em;
+    padding: 1rem; 
+}
+.navigation{
+    width: 100%;
+    margin-top: 1rem;
+} 
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li{
+        display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5 rem 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover{
+                background: #335c67;
+            }
+
+.main{
+    padding-top: 5rem;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+.footer{
+    background: #005f73;
+    padding: .5rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width:767px) {
+    .navigation ul li{
+        display: block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5 rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover{
+                background: #91c788;
+            }
+}
+
+.footer-container{
+    display: inline-block;
+    justify-content: space-between;
+}
+.redes-sociales .bubble i{
+    color: #ccc;
+    padding: 2rem;
+}
+
+.redes-sociales .bubble:hover i{
+    color: #1f2b40;
+}
+
